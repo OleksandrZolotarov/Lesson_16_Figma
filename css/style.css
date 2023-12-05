@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap);
+
+body {
+	font-family: Roboto, sans-serif;
+}
+
+.main__container {
+	min-height: 100vh;
+	background: url('../img/backgroundpic.png') 0 0 / cover no-repeat;
+	position: relative;
+}
+
+.appointment {
+	position: absolute;
+	top: 10%;
+	left: 23.6%;
+	width: 585px;
+	height: 640px;
+	border-radius: 40px;
+	background: #5D62B5;
+}
+
+.appointment__container {
+	padding: 76px 57px;
+}
+
+.appointment__title {
+	width: 470px;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 1.17;
+}
+
+.appointment__title:not(:last-child) {
+	margin-bottom: 43px;
+}
+
+.input {}
+
+.appointment__form {
+	flex-wrap: wrap;
+	display: flex;
+	gap: 22px;
+}
+
+.input__name {}
+
+::placeholder {
+	font-family: Roboto;
+	color: #FFFFFF;
+	padding: 17px 24px 15px;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+}
+
+[class*="input__"] {
+	background-color: #5D62B5;
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+	flex: 1 1 47%;
+	height: 48px;
+}
+
+
+
+.input__email {}
+
+.input__phone {}
+
+.input__dropdown {}
+
+.input__textarea {
+	flex: 1 1 100%;
+	min-height: 180px;
+
+}
+
+.input__textarea:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.appointment__button {
+	color: #FFF;
+	background-color: #F2726F;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 2;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 0 auto;
+	padding: 9px 34px;
+	border-radius: 7px;
+	cursor: pointer;
+
+}
+
+.appointment__button:active {
+	background-color: #f64a47;
+	transition: 0.2s;
+}
